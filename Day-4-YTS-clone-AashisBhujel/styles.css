@@ -1,135 +1,147 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: monospace;
-  background-color: #111;
+  font-family: Arial, sans-serif;
+  background-color: #1d1d1d;
 }
 
-.navbar {
-  background-color: steelblue;
+.bg-transparent-black {
+  background-color: #1d1d1d;
+}
+
+.color-white {
+  color: white; 
+}
+
+.color-green {
+  color: #00ff00;
+}
+
+.flex {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.p-10 {
   padding: 10px;
-  color: #111;
 }
 
-/* navbar logo css */
-
-.navbar-logo a {
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: #111;
+.navbar-logo {
+  flex: 1;
 }
 
-/*search bar css*/
+.logo-svg {
+  max-width: 100px;
+  height: auto;
+}
 
 .navbar-search {
   display: flex;
   align-items: center;
 }
 
+.fs-15 {
+  font-size: 15px;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
 .navbar-search input {
   padding: 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 300px; 
+  border: 1px solid #eee; 
+  border-radius: 15px;
+  margin-right: 10px;
+  background-color: transparent; 
+  color: #eee; 
 }
 
-.navbar-search button {
-  padding: 6px 10px;
-}
-
-/*navbar right links css*/
-
-.navbar-right {
+.navbar-links {
   display: flex;
   align-items: center;
-  /* border-style: dashed; */
 }
 
-.navbar-right a {
-  margin: 0 10px;
-  /* border-style: ; */
-  color: #111;
+.navbar-links a {
+  margin: 0 15px;
   text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  color: #919191; 
 }
 
-.navbar-right a::after {
-  content: '|';
-  margin-left: 10px;
-  color: #00ffea;
+/* Highlight 4K link in green */
+.navbar-links a.color-green {
+  color: #00ff00 !important;
 }
 
-.navbar-right a:last-child::after {
-  content: '';
-}
-
-.navbar-right a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-logo {
-    margin-bottom: 10px;
-    padding-left: 5px;
-  }
-
-  .navbar-search input,
-  button {
-    margin-top: 10px;
-  }
-
-  .navbar-right {
-    margin-top: 15px;
-  }
-
-  .navbar-right a {
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-
-  .navbar-right a::after {
-    content: none;
-  }
-}
+/* CSS for site description */
 
 .site-description {
-  /* max-width: 600px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
+  text-align: center;
   color: white;
+  position: relative;
+  background: url('background.jpg') center/cover no-repeat;
+  padding: 50px;
+}
+
+.site-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
 .site-description h1 {
-  font-size: 50px;
+  font-size: 2.83rem;
 }
 
+.site-description div {
+  margin-bottom: 10px;
+}
+
+.site-description a.fs-15 {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #428bca;
+}
+
+.site-description a.fs-15:hover {
+  text-decoration: underline;
+}
+
+/* CSS for update-links */
 .update-links {
   text-align: center;
+  margin-top: 20px; /
 }
 
 .update-links a {
   text-decoration: none;
-  color: steelblue;
+  color: #428bca;
+  margin: 0 5px; /
 }
+
 .update-links a:hover {
   text-decoration: underline;
 }
 
+/* Responsive CSS for site description  */
 @media screen and (max-width: 600px) {
   .site-description {
-    display: none;
+    display: none; 
   }
 
   .update-links {
+    display: block; 
     margin-top: 30px;
   }
 }
