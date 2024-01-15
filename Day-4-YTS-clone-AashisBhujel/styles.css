@@ -1,147 +1,133 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #1d1d1d;
-}
-
-.bg-transparent-black {
-  background-color: #1d1d1d;
-}
-
-.color-white {
-  color: white; 
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .color-green {
-  color: #00ff00;
+  color: green;
 }
 
-.flex {
+.navbar {
+  background: #1d1d1d;
+  color: #919191;
+  height: 60px;
+  padding-top: 8px;
+}
+
+.navbar-links > a {
+  color: #919191;
+}
+
+.username > a {
+  color: #919191;
+}
+
+.navbar-content {
+  width: 1140px;
+  margin: auto;
   display: flex;
-  align-items: center;
-}
-
-.justify-space-between {
   justify-content: space-between;
-}
-
-.p-10 {
-  padding: 10px;
-}
-
-.navbar-logo {
-  flex: 1;
-}
-
-.logo-svg {
-  max-width: 100px;
-  height: auto;
-}
-
-.navbar-search {
-  display: flex;
   align-items: center;
+  padding: 4px;
 }
 
-.fs-15 {
-  font-size: 15px;
+.navbar-logo img {
+  height: 40px;
+  vertical-align: middle;
 }
 
-.fw-b {
-  font-weight: bold;
+.navsearch {
+  display: flex;
 }
 
-.navbar-search input {
-  padding: 8px;
-  width: 300px; 
-  border: 1px solid #eee; 
-  border-radius: 15px;
+.searchbar {
   margin-right: 10px;
-  background-color: transparent; 
-  color: #eee; 
+}
+
+.searchbar input {
+  padding: 4px 30px;
+  height: 30px;
+  width: 250px;
+  font-size: 0.85em;
+  font-weight: 700;
+  border: 2px solid #333;
+  border-radius: 20px;
+  color: #919191;
+  background: #1d1d1d;
 }
 
 .navbar-links {
-  display: flex;
-  align-items: center;
+  padding-top: 10px;
 }
 
 .navbar-links a {
-  margin: 0 15px;
+  padding-right: 15px;
   text-decoration: none;
-  color: #919191; 
+  font-size: 0.85em;
+  font-weight: 700;
 }
 
-/* Highlight 4K link in green */
-.navbar-links a.color-green {
-  color: #00ff00 !important;
+.username a {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
 }
 
-/* CSS for site description */
+.username {
+  padding-top: 10px;
+}
 
-.site-description {
+.navbar-links > a.color-green {
+  color: green;
+}
+
+/*Home*/
+
+.home {
+  background-color: #1d1d1d;
+}
+
+.home > a {
+  text-decoration: none;
+}
+
+.home-content {
+  padding-top: 40px;
+  width: 1170px;
   margin: auto;
   text-align: center;
+}
+
+.home-content > h1 {
+  font-size: 2.7em;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  margin-top: 0;
   color: white;
-  position: relative;
-  background: url('background.jpg') center/cover no-repeat;
-  padding: 50px;
 }
 
-.site-description::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-}
-
-.site-description h1 {
-  font-size: 2.83rem;
-}
-
-.site-description div {
+.home-content > p {
+  width: 700px;
+  margin: auto;
+  font-size: 0.95em;
+  color: whitesmoke;
+  line-height: 21px;
   margin-bottom: 10px;
 }
 
-.site-description a.fs-15 {
-  font-size: 15px;
-  font-weight: bold;
+.home-content p > a {
   text-decoration: none;
   color: #428bca;
 }
 
-.site-description a.fs-15:hover {
-  text-decoration: underline;
-}
-
-/* CSS for update-links */
-.update-links {
-  text-align: center;
-  margin-top: 20px; /
-}
-
-.update-links a {
+.update-links > a {
   text-decoration: none;
   color: #428bca;
-  margin: 0 5px; /
-}
-
-.update-links a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive CSS for site description  */
-@media screen and (max-width: 600px) {
-  .site-description {
-    display: none; 
-  }
-
-  .update-links {
-    display: block; 
-    margin-top: 30px;
-  }
 }
