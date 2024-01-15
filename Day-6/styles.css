@@ -1,3 +1,69 @@
+/* Utility Classes */
+
+/* Center text horizontally and vertically */
+.utility-center-text {
+  text-align: center;
+}
+
+/* Flexbox */
+.utility-flex {
+  display: flex;
+}
+
+.utility-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Padding and Margin */
+.utility-padding-4 {
+  padding: 4px;
+}
+
+.utility-padding-8 {
+  padding: 8px;
+}
+
+.utility-padding-10 {
+  padding: 10px;
+}
+
+.utility-margin-top-10 {
+  margin-top: 10px;
+}
+
+.utility-margin-right-10 {
+  margin-right: 10px;
+}
+
+.utility-margin-left-10 {
+  margin-left: 10px;
+}
+
+.utility-margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+/* Text decoration */
+.utility-no-decoration {
+  text-decoration: none;
+}
+
+/* Color Classes */
+.utility-color-white {
+  color: white;
+}
+
+.utility-color-blue {
+  color: #428bca;
+}
+
+.utility-color-green {
+  color: green;
+}
+
+/* Base Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 * {
@@ -8,10 +74,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.color-green {
-  color: green;
-}
-
+/* Header Styles */
 .navbar {
   background: #1d1d1d;
   color: #919191;
@@ -83,17 +146,16 @@
   padding-top: 10px;
 }
 
-.navbar-links > a.color-green {
+.navbar-links > a.utility-color-green {
   color: green;
 }
 
-/*Home*/
-
+/* Home Styles */
 .home {
   background-color: #1d1d1d;
 }
 
-.home > a {
+.home > a.utility-no-decoration {
   text-decoration: none;
 }
 
@@ -117,33 +179,22 @@
   width: 700px;
   margin: auto;
   font-size: 0.95em;
-  color: whitesmoke;
+  color: #919191;
   line-height: 21px;
   margin-bottom: 10px;
 }
 
-.home-content p > a {
+.home-content p > a.utility-no-decoration.utility-color-blue {
   text-decoration: none;
   color: #428bca;
 }
 
-.update-links > a {
+/* Updates Styles */
+.updates {
+  padding-top: 40px;
+}
+
+.update-links.utility-color-blue > a.utility-no-decoration {
   text-decoration: none;
   color: #428bca;
-}
-
-/*popular*/
-#popular-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.popular-downloads > h2 {
-  margin-left: 450px;
-  font-size: 1.15em;
-  font-weight: 700;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-  color: white;
 }

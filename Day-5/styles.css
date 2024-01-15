@@ -117,7 +117,7 @@
   width: 700px;
   margin: auto;
   font-size: 0.95em;
-  color: whitesmoke;
+  color: #919191;
   line-height: 21px;
   margin-bottom: 10px;
 }
@@ -130,20 +130,4 @@
 .update-links > a {
   text-decoration: none;
   color: #428bca;
-}
-
-/*popular*/
-#popular-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.popular-downloads > h2 {
-  margin-left: 450px;
-  font-size: 1.15em;
-  font-weight: 700;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-  color: white;
 }
