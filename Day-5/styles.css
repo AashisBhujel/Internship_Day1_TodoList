@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #1d1d1d;
+  background: springgreen;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -16,7 +16,7 @@ body {
 
 .home {
   text-align: center;
-  color: blanchedalmond;
+  color: black;
 }
 
 .home > h1 {
@@ -27,7 +27,7 @@ body {
   margin: 20px;
   font-size: 16px;
   padding: 8px 20px;
-  background-color: #4caf50;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 10px;
@@ -39,21 +39,22 @@ body {
 
 .level {
   text-align: center;
-  color: blanchedalmond;
+  color: black;
 }
 
 .level > h1 {
-  padding-bottom: 80px;
+  font-size: 50px;
+  padding-bottom: 120px;
 }
 
 .level > button {
   margin: 20px;
-  font-size: 16px;
-  padding: 8px 20px;
-  background-color: #4caf50;
+  font-size: 25px;
+  padding: 10px 35px;
+  background-color: black;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
