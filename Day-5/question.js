@@ -17,6 +17,7 @@ function fetchData() {
     .catch((error) => console.log('Error fetching data', error));
 }
 
+const scoreElement = document.getElementById('score');
 const questionElement = document.getElementById('question');
 const answerButton = document.getElementById('answer-button');
 const nextButton = document.getElementById('next-btn');
@@ -28,6 +29,7 @@ function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = 'Next';
+  updateScore();
   showQuestion();
 }
 
@@ -52,7 +54,7 @@ function checkAnswer(selectedIndex) {
 
   if (selectedIndex === currentQuestion.correctIndex) {
     score++;
-    alert('Correct!');
+    updateScore();
     moveToNextQuestion();
   } else {
     alert(
@@ -62,15 +64,16 @@ function checkAnswer(selectedIndex) {
   }
 }
 
+function updateScore() {
+  scoreElement.innerHTML = 'Score: ' + score;
+}
+
 function moveToNextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     showQuestion();
   } else {
-    alert('Quiz completed. Your score: ' + score);
-    if (confirm('Do you want to restart the quiz?')) {
-      startQuiz();
-    }
+    window.location.href = 'totalscore.html?score=' + score;
   }
 }
 
