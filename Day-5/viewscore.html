@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Score</title>
+    <link rel="stylesheet" href="viewscore.css" />
+  </head>
+  <body>
+    <div id="viewscore-container">
+      <h1>View Score</h1>
+
+      <div class="dropdown">
+        <button class="dropbtn">Sorting</button>
+        <div class="dropdown-content">
+          <a href="#">sort1</a>
+          <a href="#">sort2</a>
+          <a href="#">sort3</a>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <!-- Wrap table headers in <thead> element -->
+          <tr>
+            <th>Username</th>
+            <th>Score</th>
+            <th>Timestamp</th>
+            <th>Difficulty Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="username"></td>
+            <td id="score"></td>
+            <td id="timestamp"></td>
+            <td id="difficultyLevel"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="clearRecordsButton">Clear Records</button>
+    </div>
+    <script src="viewscore.js"></script>
+  </body>
+</html>

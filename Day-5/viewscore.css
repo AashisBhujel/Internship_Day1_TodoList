@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: springgreen;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent body overflow */
+}
+
+#viewscore-container {
+  background-color: springgreen;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-height: 80vh; /* Limit container height */
+  overflow: auto; /* Add scrollbar if necessary */
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  overflow: auto; /* Add scrollbar if necessary */
+  max-height: 60vh; /* Limit table height */
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+#username,
+#score,
+#timestamp,
+#difficultyLevel {
+  font-weight: bold;
+}
+
+#clearRecordsButton {
+  margin-top: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-bottom: 7px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 57px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 2px 0px 2px 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
