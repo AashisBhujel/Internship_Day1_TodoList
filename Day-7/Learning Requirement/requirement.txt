@@ -1,3 +1,0 @@
-react router for routing
-tailwind as uitility css
-layout implement routing 
